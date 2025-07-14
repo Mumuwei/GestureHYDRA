@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="ShowMaker: Creating High-Fidelity 2D Human Video via Fine-Grained Diffusion Modeling.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="GestureHYDRA: Semantic Co-speech Gesture Synthesis via Hybrid Modality Diffusion Transformer and Cascaded-Synchronized Retrieval-Augmented Generation">
+  <meta name="keywords" content="Co-speech Gesture, Diffusion Transformer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ShowMaker: Creating High-Fidelity 2D Human Video via Fine-Grained Diffusion Modeling</title>
+  <title>GestureHYDRA: Semantic Co-speech Gesture Synthesis via Hybrid Modality Diffusion Transformer and Cascaded-Synchronized Retrieval-Augmented Generation</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/logo.svg">
+  <link rel="icon" href="./static/images/logo.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -49,54 +49,53 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title">ShowMaker: Creating High-Fidelity 2D Human Video via Fine-Grained Diffusion Modeling</h1>
-          <h4 class="subtitle is-5"><em>NeurIPS 2024 </em> </h4>
+          <h1 class="title is-3 publication-title">GestureHYDRA: Semantic Co-speech Gesture Synthesis via Hybrid Modality Diffusion Transformer and Cascaded-Synchronized Retrieval-Augmented Generation</h1>
+          <h4 class="subtitle is-5"><em>ICCV 2025 </em> </h4>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a >Quanwei Yang</a><sup>1</sup>,</span>
+              <a >Quanwei Yang</a><sup>1*</sup>,</span>
+            <span class="author-block">
+                <a >Luying Huang</a><sup>2*</sup>,</span> 
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=2Pedf3EAAAAJ">Kaisiyuan Wang</a><sup>2†</sup>,
+            </span>
             <span class="author-block">
               <a href="https://guanjz20.github.io/">Jiazhi Guan</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=2Pedf3EAAAAJ">Kaisiyuan Wang</a><sup>3*</sup>,
+              <a >Shengyi He</a><sup>2</sup>,</span>
+            <span class="author-block">
+                <a >Fengluo Li</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://hangz-nju-cuhk.github.io/">Hang Zhou</a><sup>2</sup>,
             </span>
             <span class="author-block">
               <a href="http://home.ustc.edu.cn/~yuly/">Lingyun Yu</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=1Ae0CMgAAAAJ&hl=en">Wenqing Chu</a><sup>3</sup>,
+              <a >Yingying Li</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=pnuQ5UsAAAAJ&view_op=list_works&sortby=pubdate">Haocheng Feng</a><sup>2</sup>
             </span>
             <span class="author-block">
-              <a href="https://hangz-nju-cuhk.github.io/">Hang Zhou</a><sup>3</sup>,
-            </span>
-            <span class="author-block">
-              <a >Zhiqiang Feng</a><sup>3</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?hl=zh-CN&user=pnuQ5UsAAAAJ&view_op=list_works&sortby=pubdate">Haocheng Feng</a><sup>3</sup>
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=1wzEtxcAAAAJ">Errui Ding</a><sup>3</sup>
-            </span>
-            <span class="author-block">
-              <a href="https://jingdongwang2017.github.io/">Jingdong Wang</a><sup>3</sup>
-            </span>
-            <span class="author-block">
-              <a href="https://faculty.ustc.edu.cn/xiehongtao/zh_CN/index.htm">Hongtao Xie</a><sup>1*</sup>
+              <a href="https://faculty.ustc.edu.cn/xiehongtao/zh_CN/index.htm">Hongtao Xie</a><sup>1†</sup>
             </span>
             
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>University of Science and Technology of China,</span>
-            <span class="author-block"><sup>2</sup>Tsinghua University,</span>
-            <span class="author-block"><sup>3</sup>Department of Computer Vision Technology (VIS), Baidu Inc.</span>
-            
+            <span class="author-block"><sup>2</sup>VIS, Baidu Inc.</span>
           </div>
-
+          <div class="is-size-6">
+            <span><sup>*</sup> Equal contribution.</span>
+            <span style="margin-left: 1em;"><sup>†</sup> Corresponding authors.</span>
+          </div>
+          
+          
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <!-- <span class="link-block">
+              <span class="link-block">
                 <a href="https://arxiv.org/pdf/2011.12948"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -104,8 +103,8 @@
                   </span>
                   <span>Paper</span>
                 </a>
-              </span> -->
-              <!-- <span class="link-block">
+              </span>
+              <span class="link-block">
                 <a href="https://arxiv.org/abs/2011.12948"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -113,9 +112,9 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span> -->
+              </span>
               <!-- Video Link. -->
-              <!-- <span class="link-block">
+              <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -123,9 +122,9 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span> -->
+              </span>
               <!-- Code Link. -->
-              <!-- <span class="link-block">
+              <span class="link-block">
                 <a href="https://github.com/google/nerfies"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -133,17 +132,18 @@
                   </span>
                   <span>Code</span>
                   </a>
-              </span> -->
+              </span>
               <!-- Dataset Link. -->
-              <!-- <span class="link-block">
+              <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a> -->
+                  </a>
             </div>
+            
 
           </div>
         </div>
@@ -152,17 +152,14 @@
   </div>
 </section>
 
-
-
 <section class="hero teaser">
   <div class="container is-max-desktop">
-
-      <img src="./static/images/pipeline_seth2.png"  width="800px" height="500px" 
+      <img src="./static/images/pipeline.png"  width="800px" height="500px" 
         type="application/pdf">
       </img>
       
       <h2 class="subtitle has-text-centered">
-        The overview of our proposed framework ShowMaker. 
+        The overview of our proposed framework GestureHYDRA. 
       </h2>
 
   </div>
@@ -190,23 +187,12 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-          Although significant progress has been made in human video generation, most previous studies focus on either human facial animation or full-body animation,
-          which cannot be directly applied to produce realistic conversational human videos with frequent hand gestures and various facial movements simultaneously. 
-          </p>
-          <p>
-          To address these limitations, we propose a 2D human video generation framework, named ShowMaker, capable of generating high-fidelity half-body conversational
-          videos based on 2D key points via fine-grained diffusion modeling. 
-          We leverage dual-stream diffusion models as the backbone of our framework and carefully design two novel components for crucial local regions (i.e., hands and face) that can
-          be easily integrated into our backbone. 
-          Specifically, to handle the challenging hand generation caused by sparse motion guidance, we propose a novel Key Point-based Fine-grained Hand Modeling module by amplifying positional information from
-          raw hand key points and constructing a corresponding key point-based codebook.
-          Moreover, to restore richer facial details in generated results, we introduce a Face Recapture module, which extracts facial texture features and global identity features
-          from the aligned human face and integrates them into the diffusion process for face enhancement. 
-          </p>
-          <p>
-          Extensive quantitative and qualitative experiments demonstrate the superior visual quality and temporal consistency of our method
-          </p>
+          While increasing attention has been paid to co-speech gesture synthesis, most previous works neglect to investigate hand gestures with explicit and essential semantics.
+          In this paper, we study co-speech gesture generation with an emphasis on specific hand gesture activation, which can deliver more instructional information than common body movements.
+          To achieve this, we first build a high-quality dataset of 3D human body movements including a set of semantically explicit hand gestures that are commonly used by live streamers.
+          Then we present a hybrid-modality gesture generation system GestureHYDRA built upon a hybrid-modality diffusion transformer architecture with novelly designed motion-style injective transformer layers, which enables advanced gesture modeling ability and versatile gesture operations.
+          To guarantee these specific hand gestures can be activated, we introduce a cascaded retrieval-augmented generation strategy built upon a semantic gesture repository annotated for each subject and an adaptive audio-gesture synchronization mechanism, which substantially improves semantic gesture activation and production efficiency.
+          Quantitative and qualitative experiments demonstrate that our proposed approach achieves superior performance over all the counterparts.
         </div>
       </div>
     </div>
@@ -215,14 +201,14 @@
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
+        <h2 class="title is-3">Introduction Video</h2>
         <!-- <div class="publication-video"> -->
           <!-- <video poster="" id="paper-video" autoplay controls muted loop playsinline height="100%"> -->
           <!-- <video width="800" height="600" controls>
             <source src="https://www.youtube.com/watch?v=jWvAglDGWxA&t=1s" type="video/mp4">
           </video> -->
           <iframe width="800" height="480"
-           src="https://www.youtube.com/embed/Uw8CUv5d_YY?si=J7IG9QdlJF0e4wWy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+           src="https://www.youtube.com/embed/ISCdBlRgjiM?si=ocqE0mp4ibUG9iXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
           </iframe>
           <!-- </video> -->
         <!-- </div> -->
@@ -242,11 +228,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{yang2024showmaker,
-  author    = {Quanwei Yang, Jiazhi Guan, Kaisiyuan Wang, Lingyun Yu, Wenqing Chu, Hang Zhou, Zhiqiang Feng, Haocheng Feng, Errui Ding, Jingdong Wang, Hongtao Xie.},
-  title     = {ShowMaker: Creating High-Fidelity 2D Human Video via Fine-Grained Diffusion Modeling},
-  journal   = {NeurIPS},
-  year      = {2024},
+    <pre><code>@inproceedings{yang2025GestureHYDRA,
+  author    = {Quanwei Yang, Luying Huang, Kaisiyuan Wang, Jiazhi Guan, Shengyi He, Fengguo Li, Lingyun Yu, Yingying Li, Haocheng Feng, Hang Zhou, Hongtao Xie.},
+  title     = {GestureHYDRA: Semantic Co-speech Gesture Synthesis via Hybrid Modality Diffusion Transformer and Cascaded-Synchronized Retrieval-Augmented Generation},
+  booktitle = {ICCV},
+  year      = {2025},
 }</code></pre>
   </div>
 </section>
